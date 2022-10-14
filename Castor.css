@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: fixed;
+    background: #132835;
+    padding: 20px;
+    width: 100%;
+    height: 65px;
+}
+
+.buscar{
+    margin-left: 850px;
+    margin-right: 200px;
+    margin-top: -30px ;
+}
+
+/*título*/
+.left h3{
+    color: #fff;
+    margin: 0;
+    margin-top: -25px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+.left span{
+    color: #51b3ec;
+}
+/*fim do título*/
+
+/*botão sair*/
+.sair_btn{
+    padding: 5px;
+    background: #51b3ec;
+    text-decoration: none;
+    float: right;
+    margin-top: -58px;
+    margin-right: -10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sair_btn:hover{
+    background: #4a9fcf;
+}
+/*fim botão sair*/
+
+/*sidebar*/
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 65px;
+    padding-top: 30px;
+    background: #132835;
+    transition: 0.5s;
+    transition-property: left;
+    
+}
+.sidebar .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/*tamanho sidebar*/
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background ;
+}
+.sidebar a:hover{
+    background: #51b3ec;
+    color: #fff;
+}
+
+/*ícone sidebar */
+.sidebar a ion-icon{
+    padding-right: 10px;
+}
+
+/*personalização sidebar*/
+label #sidebar_btn{
+    z-index: 1;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    margin: -18px -4px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property:color ;
+}
+
+/*cor de hover*/
+label #sidebar_btn:hover{
+    color: #51b3ec;
+}
+
+/*início da animação*/
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.content{
+    background: url(castor_logo_2.png) no-repeat;
+    margin-left: -10px;
+    background-position: center;
+    height: 100vh;
+    transition: 0.5s;
+}
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+#check{
+    display: none;
+}
+/*fim da animação*/
+
+/*logo ISERJ branca*/
+.img{
+  width: 120px;
+  margin-left: 730px;
+  height: 40px;
+  margin-top: -60px;
+}
+
+
+
